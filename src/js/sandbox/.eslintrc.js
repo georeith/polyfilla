@@ -1,4 +1,3 @@
-/* eslint quote-props: ['error', 'consistent'] */
 module.exports = {
     'env': {
         'browser': true,

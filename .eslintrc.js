@@ -1,4 +1,3 @@
-/* eslint quote-props: ['error', 'consistent'] */
 module.exports = {
     'root': true,
     'extends': 'airbnb',
@@ -16,5 +15,6 @@ module.exports = {
         'indent': [2, 4, { 'SwitchCase': 1, 'VariableDeclarator': 1 }],
         'import/no-unresolved': [2, { 'ignore': ['^[~]'] }], // temporary workaround until https://github.com/AtomLinter/linter-eslint/issues/610 is solved
         'max-len': [0, 100, 4],
+        'quote-props': ['error', 'consistent'],
     },
 };
