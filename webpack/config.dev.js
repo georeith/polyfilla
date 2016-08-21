@@ -1,8 +1,9 @@
 const path = require('path');
+const common = require('./config.common');
 
-module.exports = {
+module.exports = Object.assign({}, common, {
     devtool: 'source-map',
-    entry: path.join(__dirname, '../src/js/index.js'),
+    entry: path.join(__dirname, '../src/js/sandbox/index.jsx'),
     module: {
         preLoaders: [
             {
@@ -14,11 +15,11 @@ module.exports = {
             {
                 exclude: /node_modules/,
                 loaders: ['babel-loader', 'eslint-loader'],
-                test: /\.js$/,
+                test: /\.jsx?$/,
             },
         ],
     },
     output: {
         filename: 'app.js',
     },
-};
+});
