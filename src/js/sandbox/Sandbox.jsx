@@ -1,5 +1,9 @@
 import React from 'react';
 
+import Browser from '~/sandbox/Browser.jsx';
+
 export default function () {
-    return <h1>Sandbox</h1>;
+    return (
+        <Browser />
+    );
 }
